@@ -13,7 +13,7 @@ const Footer = () => {
     return (
         <footer className="footer p-10 bg-lime-100 text-base-content">
             <aside className="pl-16 md:pl-12 space-y-2 text-lg">
-                <p className="text-3xl font-semibold" data-aos="zoom-in-down">Luxury Reside</p>
+                <p className="text-3xl font-semibold" data-aos="zoom-in-down">Painted Palette</p>
                 <p className="flex items-center gap-2" data-aos="fade-right"
                 ><FaPhone />+880 1236 87233</p>
                 <p className="flex items-center gap-2" data-aos="fade-right"><MdEmail />luxury67@gmail.com</p>

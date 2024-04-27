@@ -1,0 +1,44 @@
+[
+  {
+    "id": 1,
+    "name": "Emily Johnson",
+    "rating": 4.50,
+    "reviews": "I recently discovered a treasure trove of art supplies at Painted Palette. The website's layout made it easy to find what I needed, and the selection was extensive. Excited to dive into my new supplies!",
+    "picture": "https://i.ibb.co/71zw1rD/confident-smiling-businesswoman-writing-notes.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Michael Smith",
+    "rating": 5.00,
+    "reviews": "Painted Palette helped me source unique art materials for my latest project. The ordering process was seamless, and the customer service was outstanding. Highly recommend!",
+    "picture": "https://i.ibb.co/df5DBgH/serious-readhead-bearded-man-white-tshirt-holding-folder-pen-171337-7855.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Sarah Williams",
+    "rating": 4.80,
+    "reviews": "As a senior artist, I appreciate the convenience and quality of Painted Palette's supplies. It's my go-to for art essentials. Thank you for making creativity accessible!",
+    "picture": "https://i.ibb.co/28B6hdJ/pretty-smiling-joyfully-female-with-fair-hair-dressed-casually-looking-with-satisfaction-176420-1518.jpg"
+  },
+  {
+    "id": 4,
+    "name": "David Brown",
+    "rating": 5.00,
+    "reviews": "I found everything I needed for my art retreat at Painted Palette. The website's intuitive design and prompt delivery exceeded my expectations. Great experience!",
+    "picture": "https://i.ibb.co/s5Zy779/successful-old-businessman-suit-glasses-looking-confident-176420-31742.jpg"
+  },
+  {
+    "id": 5,
+    "name": "Emma Martinez",
+    "rating": 4.50,
+    "reviews": "Painted Palette offers a fantastic range of art supplies, including unique paints and brushes. I found the perfect tools for my latest project. Thanks for the inspiration!",
+    "picture": "https://i.ibb.co/b3x56yC/young-woman-writing-her-journal.jpg"
+  },
+  {
+    "id": 6,
+    "name": "John Davis",
+    "rating": 5.00,
+    "reviews": "As an art student, finding quality supplies is essential. Painted Palette exceeded my expectations with its diverse selection and prompt service. I'm set for my semester!",
+    "picture": "https://i.ibb.co/rcRDdtQ/thoughtful-businessman-sitting-office-desk-writing-trying-think-up-idea-squinting-as-pondering-new-c.jpg"
+  }
+]
