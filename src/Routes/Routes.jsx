@@ -7,9 +7,9 @@ import LogIn from "../Layouts/LogIn";
 import CardDetails from "../Cards/CardDetails";
 import ErrorPage from "../ErrorPage/ErrorPage";
 import PrivateRoute from "./PrivateRoute";
-import About from "../Layouts/About";
-import UpdateProfile from "../Layouts/UpdateProfile";
-import Contact from "../Layouts/Contact";
+import AllCrafts from "../Layouts/AllCrafts";
+import AddCrafts from "../Layouts/AddCrafts";
+import Craftlist from "../Layouts/Craftlist";
 
 
 const router = createBrowserRouter([
@@ -23,8 +23,8 @@ const router = createBrowserRouter([
                 element: <Home></Home>,
             },
             {
-                path: "/about",
-                element: <About></About>,
+                path: "/allcraft",
+                element: <AllCrafts></AllCrafts>,
             },
             {
                 path: "/register",
@@ -40,18 +40,14 @@ const router = createBrowserRouter([
                 loader: () => fetch("residential.json")
             },
             {
-                path: "/cart",
-                element: <PrivateRoute><Cart></Cart></PrivateRoute>,
-                loader: () => (fetch("residential.json"))
+                path: "/addcraft",
+                element: <PrivateRoute><AddCrafts></AddCrafts></PrivateRoute>,
             },
             {
-                path: "/update",
-                element: <PrivateRoute><UpdateProfile></UpdateProfile></PrivateRoute>,
+                path: "/artscraftlist",
+                element: <PrivateRoute><Craftlist></Craftlist></PrivateRoute>,
             },
-            {
-                path: "/contact",
-                element: <Contact></Contact>,
-            }
+            
         ]
     }
 ])

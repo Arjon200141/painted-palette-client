@@ -30,10 +30,9 @@ const NavBar = () => {
 
     const links = <>
         <li> <NavLink to="/" style={navlinkStyles}>Home</NavLink></li>
-        <li><NavLink to="/about" style={navlinkStyles}>About</NavLink></li>
-        <li><NavLink to="/contact" style={navlinkStyles}>Contact Us</NavLink></li>
-        <li><NavLink to="/update" style={navlinkStyles}>Update Profile</NavLink></li>
-        <li><NavLink to="/cart" style={navlinkStyles}>Cart</NavLink></li>
+        <li><NavLink to="/allcraft" style={navlinkStyles}>All Art & craft Items</NavLink></li>
+        <li><NavLink to="/addcraft" style={navlinkStyles}>Add Craft Item</NavLink></li>
+        <li><NavLink to="/artscraftlist" style={navlinkStyles}>My Art&Craft List</NavLink></li>
     </>
 
 
@@ -50,12 +49,12 @@ const NavBar = () => {
                         </ul>
                     </div>
                     <Link to="/">
-                        <a className="btn btn-ghost text-2xl">Luxury <span>Reside</span></a>
+                        <a className="btn btn-ghost text-3xl">Painted <span className="text-red-500">Palette</span></a>
                     </Link>
                 </div>
 
                 <div className="navbar-center hidden md:flex">
-                    <ul className="menu menu-horizontal px-1 gap-8 text-xl font-medium">
+                    <ul className="menu menu-horizontal px-1 gap-1 text-xl font-medium">
                         {links}
                     </ul>
                 </div>
@@ -79,7 +78,10 @@ const NavBar = () => {
                                 <button className="btn bg-amber-200 text-xl font-medium px-6" onClick={handleSignOut}>Sign Out</button>
                                 <ToastContainer />
                             </div> :
-                            <div>
+                            <div className="flex gap-6">
+                                <Link to="/register">
+                                    <button className="btn bg-amber-200 text-xl font-medium px-6">Register</button>
+                                </Link>
                                 <Link to="/login">
                                     <button className="btn bg-lime-200 text-xl font-medium px-6">Sign In</button>
                                 </Link>

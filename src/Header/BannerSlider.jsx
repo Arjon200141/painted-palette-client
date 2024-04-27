@@ -6,7 +6,7 @@ import 'swiper/swiper-bundle.css';
 
 const BannerSlider = () => {
     return (
-        <div className='mx-6 my-14'>
+        <div className='mx-6 my-6'>
             <Swiper
                 modules={[Navigation, Pagination, Scrollbar, A11y , EffectFlip]}
                 spaceBetween={50}
