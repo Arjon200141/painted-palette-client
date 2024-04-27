@@ -1,9 +1,6 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination, Scrollbar, A11y , EffectFlip } from 'swiper/modules';
-
-
 import 'swiper/swiper-bundle.css';
-
 const BannerSlider = () => {
     return (
         <div className='mx-6 my-6'>
@@ -32,5 +29,4 @@ const BannerSlider = () => {
         </div>
     );
 };
-
 export default BannerSlider;

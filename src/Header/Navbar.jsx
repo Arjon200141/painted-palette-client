@@ -1,4 +1,4 @@
-import { Link, NavLink ,useNavigate } from "react-router-dom";
+import { Link, NavLink, useNavigate } from "react-router-dom";
 import { useContext, useState, } from "react";
 import { AuthContext } from "../providers/AuthProviders";
 import { ToastContainer, toast } from 'react-toastify';
@@ -23,9 +23,9 @@ const NavBar = () => {
         logOut()
             .then()
             .catch()
-            navigate("/")
+        navigate("/")
         toast.success("Sign Out!!!");
-        
+
     }
 
     const links = <>
@@ -59,7 +59,6 @@ const NavBar = () => {
                     </ul>
                 </div>
                 <div className="navbar-end gap-3">
-
                     {
                         user ?
                             <div className="flex items-center gap-3">
@@ -71,7 +70,7 @@ const NavBar = () => {
                                     onMouseLeave={() => setShowName(false)}
                                 >
                                     <div className=" rounded-full">
-                                        <img alt="Profile" src={user.photoURL||"https://i.ibb.co/dDx1cfY/user.png" } />
+                                        <img alt="Profile" src={user.photoURL || "https://i.ibb.co/dDx1cfY/user.png"} />
                                     </div>
                                     {showName && <div className="absolute top-2 right-14 bg-emerald-100 shadow-md p-2 rounded-lg font-medium">{user.displayName || "Name not Found"}</div>}
                                 </div>
