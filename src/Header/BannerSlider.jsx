@@ -17,16 +17,16 @@ const BannerSlider = () => {
                 scrollbar={{ draggable: true }}
             >
                 <SwiperSlide>
-                    <img src="https://i.ibb.co/4Th5wN6/village-house-summer-day-blue-sky-surface-266732-25264.jpg" alt="" className='w-full h-[90vh]'/>
+                    <img src="https://i.ibb.co/gF1NrxV/banner1.jpg" alt="" className='w-full h-[90vh]'/>
                 </SwiperSlide>
                 <SwiperSlide>
-                    <img src="https://i.ibb.co/MDz4WWv/modern-house-exterior-sale-rent-293060-7831.jpg" alt="" className='w-full h-[90vh]'/>
+                    <img src="https://i.ibb.co/7ngDQ39/banner2.jpg" alt="" className='w-full h-[90vh]'/>
                 </SwiperSlide>
                 <SwiperSlide>
-                    <img src="https://i.ibb.co/vd3GWrD/luxury-pool-villa-spectacular-contemporary-design-digital-art-real-estate-home-house-property-ge-125.jpg" alt="" className='w-full h-[90vh]'/>
+                    <img src="https://i.ibb.co/JrcT4TX/banner3.jpg" alt="" className='w-full h-[90vh]'/>
                 </SwiperSlide>
                 <SwiperSlide className='h-1/2'>
-                    <img src="https://i.ibb.co/XYWvRHy/modern-cape-cod-house-with-sleek-exterior-minimalist-design-elements-large-windowsgenerative-ai-7620.jpg" alt="" className='w-full h-[90vh]'/>
+                    <img src="https://i.ibb.co/WnCKFLz/banner4.jpg" alt="" className='w-full h-[90vh]'/>
                 </SwiperSlide>
             </Swiper>
         </div>

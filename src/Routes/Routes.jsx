@@ -1,7 +1,6 @@
 import { createBrowserRouter } from "react-router-dom";
 import Root from "../Root/Root";
 import Home from "../Layouts/Home";
-import Cart from "../Layouts/Cart";
 import Register from "../Layouts/Register";
 import LogIn from "../Layouts/LogIn";
 import CardDetails from "../Cards/CardDetails";

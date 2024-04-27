@@ -75,7 +75,7 @@ const NavBar = () => {
                                     </div>
                                     {showName && <div className="absolute top-2 right-14 bg-emerald-100 shadow-md p-2 rounded-lg font-medium">{user.displayName || "Name not Found"}</div>}
                                 </div>
-                                <button className="btn bg-amber-200 text-xl font-medium px-6" onClick={handleSignOut}>Sign Out</button>
+                                <button className="btn bg-amber-200 text-xl font-medium px-6" onClick={handleSignOut}>Log Out</button>
                                 <ToastContainer />
                             </div> :
                             <div className="flex gap-6">
@@ -83,7 +83,7 @@ const NavBar = () => {
                                     <button className="btn bg-amber-200 text-xl font-medium px-6">Register</button>
                                 </Link>
                                 <Link to="/login">
-                                    <button className="btn bg-lime-200 text-xl font-medium px-6">Sign In</button>
+                                    <button className="btn bg-lime-200 text-xl font-medium px-6">Log In</button>
                                 </Link>
                             </div>
                     }
