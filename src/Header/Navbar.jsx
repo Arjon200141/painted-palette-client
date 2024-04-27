@@ -2,6 +2,7 @@ import { Link, NavLink, useNavigate } from "react-router-dom";
 import { useContext, useState, } from "react";
 import { AuthContext } from "../providers/AuthProviders";
 import { ToastContainer, toast } from 'react-toastify';
+import { Tooltip as ReactTooltip } from 'react-tooltip'
 
 const NavBar = () => {
     const navlinkStyles = ({ isActive }) => {
@@ -74,16 +75,35 @@ const NavBar = () => {
                                     </div>
                                     {showName && <div className="absolute top-2 right-14 bg-emerald-100 shadow-md p-2 rounded-lg font-medium">{user.displayName || "Name not Found"}</div>}
                                 </div>
-                                <button className="btn bg-amber-200 text-xl font-medium px-6" onClick={handleSignOut}>Log Out</button>
+                                <button className="btn bg-amber-200 text-xl font-medium px-6" id="logoutBtn" onClick={handleSignOut}>Log Out</button>
+                                <ReactTooltip
+                                    anchorId="logoutBtn"
+                                    place="top"
+                                    variant="warning"
+                                    content="Click Here to Log Out!"
+                                />
                                 <ToastContainer />
                             </div> :
-                            <div className="flex gap-6">
+                            <div className="flex gap-6 ">
                                 <Link to="/register">
-                                    <button className="btn bg-amber-200 text-xl font-medium px-6">Register</button>
+                                    <button className="btn bg-amber-200 text-xl font-medium px-6" id="regBtn">Register</button>
+                                    <ReactTooltip
+                                        anchorId="regBtn"
+                                        place="top"
+                                        variant="success"
+                                        content="Click Here to Register!"
+                                    />
                                 </Link>
                                 <Link to="/login">
-                                    <button className="btn bg-lime-200 text-xl font-medium px-6">Log In</button>
+                                    <button className="btn bg-lime-200 text-xl font-medium px-6" id="loginBtn">Log In</button>
+                                    <ReactTooltip
+                                        anchorId="loginBtn"
+                                        place="top"
+                                        variant="info"
+                                        content="Click Here to Log In"
+                                    />
                                 </Link>
+
                             </div>
                     }
                 </div>
