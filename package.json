@@ -1,5 +1,5 @@
 {
-  "name": "paintedpalette",
+  "name": "painted-palette",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -10,19 +10,30 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "animate.css": "^4.1.1",
+    "aos": "^2.3.4",
+    "firebase": "^10.11.0",
     "localforage": "^1.10.0",
     "match-sorter": "^6.3.4",
+    "prop-types": "^15.8.1",
     "react": "^18.2.0",
+    "react-awesome-slider": "^4.1.0",
     "react-dom": "^18.2.0",
-    "react-router-dom": "^6.23.0",
-    "sort-by": "^1.2.0"
+    "react-fast-marquee": "^1.6.4",
+    "react-helmet-async": "^2.0.4",
+    "react-icons": "^5.1.0",
+    "react-intersection-observer": "^9.8.2",
+    "react-router-dom": "^6.22.3",
+    "react-toastify": "^10.0.5",
+    "sort-by": "^1.2.0",
+    "swiper": "^11.1.1"
   },
   "devDependencies": {
     "@types/react": "^18.2.66",
     "@types/react-dom": "^18.2.22",
     "@vitejs/plugin-react": "^4.2.1",
     "autoprefixer": "^10.4.19",
-    "daisyui": "^4.10.2",
+    "daisyui": "^4.10.1",
     "eslint": "^8.57.0",
     "eslint-plugin-react": "^7.34.1",
     "eslint-plugin-react-hooks": "^4.6.0",
