@@ -3,7 +3,6 @@ import BannerSlider from "../Header/BannerSlider";
 import Reviews from "./Reviews";
 import CraftItems from "./CraftItems";
 import FAQs from "./FAQs";
-// import Cards from "../Cards/Cards";
 
 const Home = () => {
     return (
@@ -12,7 +11,6 @@ const Home = () => {
                 <title>Painted Palette</title>
             </Helmet>
             <BannerSlider></BannerSlider>
-            {/* <Cards></Cards> */}
             <CraftItems></CraftItems>
             <FAQs></FAQs>
             <Reviews></Reviews>

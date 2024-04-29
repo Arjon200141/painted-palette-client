@@ -11,11 +11,9 @@ const Card = ({ card }) => {
     }, [])
 
     const { _id, name, image, short_description, customization, stock_status, price } = card;
-    console.log(card);
-
     return (
         <div>
-            <div className="card card-compact bg-white text-black border-white border-2 shadow-xl" data-aos="fade-up">
+            <div className="card card-compact bg-lime-50 text-black border-white border-2 shadow-xl" data-aos="fade-up">
                 <figure><img src={image} alt="Shoes" className="md:h-[300px] w-full" data-aos="zoom-in-up" /></figure>
                 <div className="card-body px-6 py-4 space-y-3">
                     <h2 className="card-title text-xl font-bold">{name}</h2>

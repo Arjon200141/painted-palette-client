@@ -1,11 +1,11 @@
 import { Helmet } from "react-helmet-async";
-import { FaLocationDot } from "react-icons/fa6";
+import { IoIosBrush } from "react-icons/io";
+import { MdEmail } from "react-icons/md";
 import { Link, useLoaderData } from "react-router-dom";
 
 const CardDetails = () => {
 
     const card = useLoaderData();
-    console.log(card);
 
     return (
         <div>
@@ -13,20 +13,30 @@ const CardDetails = () => {
                 <title>Details of Card</title>
             </Helmet>
             <div className="hero bg-base-100">
-                <div className="hero-content flex-col md:flex-row md:gap-12 md:mx-12">
+                <div className="hero-content flex-col md:flex-row md:gap-8 md:mx-12">
                     <img src={card.image} className="md:w-[600px] h-[600px] rounded-lg shadow-2xl " />
-                    <div className="text-lg md:mx-8 ">
-                        <h1 className="text-3xl font-bold">{card.item_name}</h1>
-                        <p className="py-4">{card.short_description}</p>
+                    <div className="text-xl md:h-[600px] md:mx-8 space-y-3 bg-amber-50 rounded-xl pt-20 px-12">
+                        <h1 className="text-4xl font-bold">{card.item_name}</h1>
+                        <h2 className="text-2xl mt-4"><span className="font-semibold">Sub Category :</span> {card.subcategory_name}</h2>
+                        <p className="py-4 text-lg">{card.short_description}</p>
+
                         <hr />
-                        <div className="flex justify-between mt-4">
-                            <p><span className="font-medium">Stock Status : </span>{card.stock_status}</p>
-                            <p className="flex items-center gap-2"><FaLocationDot /> {card.location}</p>
+
+                        <div className="flex md:justify-between">
+                            <p><span className="font-medium">Customization : </span>{card.customization}</p>
+                            <p><span className="text-lg font-semibold">Rating : </span>{card.rating}</p>
                         </div>
-                        <div className="flex justify-between my-4">
-                            <p><span className="font-medium">Status : </span>{card.status}</p>
-                            <p><span className="font-medium">Price : </span>{card.price}</p>
+
+                        <p><span className="font-medium">Status : </span>{card.stock_status}</p>
+                        <p><span className="text-lg font-semibold">Processing Time : </span>{card.processing_time}</p>
+
+                        <p><span className="text-lg font-semibold">Price : </span>{card.price}$</p>
+
+                        <div className="md:flex text-lg items-center md:justify-between">
+                        <p className="flex gap-1 items-center"><IoIosBrush />{card.user_name}</p>
+                        <a className="flex gap-1 items-center"><MdEmail />{card.user_email}</a>
                         </div>
+                    
                     </div>
                 </div>
             </div>
@@ -36,6 +46,7 @@ const CardDetails = () => {
                 </div>
             </Link>
         </div>
+
     );
 };
 

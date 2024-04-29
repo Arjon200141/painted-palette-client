@@ -36,11 +36,6 @@ const router = createBrowserRouter([
                 path: "/login",
                 element: <LogIn></LogIn>
             },
-            // {
-            //     path: "/cards/:cardId",
-            //     element: <PrivateRoute><CardDetails></CardDetails></PrivateRoute>,
-            //     // loader: ({ params }) => fetch(`http://localhost:5000/paintings/${params.cardId}`)
-            // },
             {
                 path: "/addcraft",
                 element: <PrivateRoute><AddCrafts></AddCrafts></PrivateRoute>,
@@ -53,7 +48,7 @@ const router = createBrowserRouter([
             {
                 path: "/cards/:cardId",
                 element: <PrivateRoute><CardDetails></CardDetails></PrivateRoute>,
-                loader: ({ params }) => fetch(`https://painting-arena-server.vercel.app/paintings/${params.cardId}`),
+                loader: ({ params }) =>fetch(`http://localhost:5000/paintings/${params.cardId}`),
             },
 
         ]
