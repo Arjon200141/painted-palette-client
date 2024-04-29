@@ -1,6 +1,5 @@
 import { GithubAuthProvider, GoogleAuthProvider, signInWithEmailAndPassword, signInWithPopup } from "firebase/auth";
 import { Link , useLocation , useNavigate} from "react-router-dom";
-import auth from "../firease/firebase.config";
 import { useContext, useState } from "react";
 import { AuthContext } from "../providers/AuthProviders";
 import { ToastContainer, toast } from 'react-toastify';
@@ -8,6 +7,7 @@ import { Helmet } from "react-helmet-async";
 import Aos from "aos"
 import { useEffect } from "react";
 import "aos/dist/aos.css";
+import auth from "../firebase.config";
 
 const LogIn = () => {
 

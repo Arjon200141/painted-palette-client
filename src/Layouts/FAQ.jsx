@@ -3,10 +3,10 @@ const FAQ = () => {
         <div className="my-12">
             <h2 className="text-4xl font-semibold text-center">Frequently Asked Questions</h2>
             <p className="text-slate-400 text-lg text-center mt-3">The Painted Palette FAQ section offers answers to common inquiries about our artwork and services.<br />  Discover insights on customizations, shipping, and more in our comprehensive FAQ guide.</p>
-            <div className="flex md:flex-row justify-between mx-12">
-                <img src="https://i.ibb.co/C6PM8KZ/faqs-concept-illustration-114360-5185.jpg" alt="" />
+            <div className="flex flex-col md:flex-row justify-between m-12 gap-4">
+                <img src="https://i.ibb.co/C6PM8KZ/faqs-concept-illustration-114360-5185.jpg" alt="" className="md:h-96 md:w-auto border-2 border-solid rounded-xl"/>
                 <div className="mr-12">
-                    <div className="collapse collapse-plus bg-base-200 mt-20 ">
+                    <div className="collapse collapse-plus bg-base-200 ">
                         <input type="radio" name="my-accordion-3" defaultChecked />
                         <div className="collapse-title text-xl font-medium">
                             What is the Painted Palette?

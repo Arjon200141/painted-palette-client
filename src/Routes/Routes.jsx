@@ -3,7 +3,7 @@ import Root from "../Root/Root";
 import Home from "../Layouts/Home";
 import Register from "../Layouts/Register";
 import LogIn from "../Layouts/LogIn";
-import CardDetails from "../Cards/CardDetails";
+// import CardDetails from "../Cards/CardDetails";
 import ErrorPage from "../ErrorPage/ErrorPage";
 import PrivateRoute from "./PrivateRoute";
 import AllCrafts from "../Layouts/AllCrafts";
@@ -20,6 +20,7 @@ const router = createBrowserRouter([
             {
                 path: "/",
                 element: <Home></Home>,
+                // loader:()=>fetch('http://localhost:5000/paintings')
             },
             {
                 path: "/allcraft",
@@ -33,11 +34,11 @@ const router = createBrowserRouter([
                 path: "/login",
                 element: <LogIn></LogIn>
             },
-            {
-                path: "/cards/:cardId",
-                element: <PrivateRoute><CardDetails></CardDetails></PrivateRoute>,
-                loader: () => fetch("residential.json")
-            },
+            // {
+            //     path: "/cards/:cardId",
+            //     element: <PrivateRoute><CardDetails></CardDetails></PrivateRoute>,
+            //     // loader: ({ params }) => fetch(`http://localhost:5000/paintings/${params.cardId}`)
+            // },
             {
                 path: "/addcraft",
                 element: <PrivateRoute><AddCrafts></AddCrafts></PrivateRoute>,
@@ -46,7 +47,7 @@ const router = createBrowserRouter([
                 path: "/artscraftlist",
                 element: <PrivateRoute><Craftlist></Craftlist></PrivateRoute>,
             },
-            
+
         ]
     }
 ])
