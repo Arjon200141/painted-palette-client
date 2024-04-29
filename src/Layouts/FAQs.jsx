@@ -1,4 +1,4 @@
-const FAQ = () => {
+const FAQs = () => {
     return (
         <div className="my-12">
             <h2 className="text-4xl font-semibold text-center">Frequently Asked Questions</h2>
@@ -57,4 +57,4 @@ const FAQ = () => {
     );
 };
 
-export default FAQ;
+export default FAQs;

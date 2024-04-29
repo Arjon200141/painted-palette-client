@@ -12,7 +12,7 @@ import auth from "../firebase.config";
 const LogIn = () => {
 
     useEffect(() => {
-        Aos.init({duration : 500})
+        Aos.init({duration : 300})
     },[])
 
     const location = useLocation();

@@ -12,7 +12,7 @@ import "aos/dist/aos.css";
 const Register = () => {
 
     useEffect(() => {
-        Aos.init({ duration: 500 })
+        Aos.init({ duration: 300 })
     }, [])
 
     const { createUser, updateUserProfile } = useContext(AuthContext);
