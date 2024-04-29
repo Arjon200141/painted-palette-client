@@ -9,6 +9,7 @@ import PrivateRoute from "./PrivateRoute";
 import AllCrafts from "../Layouts/AllCrafts";
 import AddCrafts from "../Layouts/AddCrafts";
 import Craftlist from "../Layouts/Craftlist";
+import CardDetails from "../Cards/CardDetails";
 
 
 const router = createBrowserRouter([
@@ -48,6 +49,11 @@ const router = createBrowserRouter([
                 path: "/artscraftlist",
                 element: <PrivateRoute><Craftlist></Craftlist></PrivateRoute>,
                 loader: ()=>fetch('http://localhost:5000/paintings'),
+            },
+            {
+                path: "/cards/:cardId",
+                element: <PrivateRoute><CardDetails></CardDetails></PrivateRoute>,
+                loader: ({ params }) => fetch(`https://painting-arena-server.vercel.app/paintings/${params.cardId}`),
             },
 
         ]
