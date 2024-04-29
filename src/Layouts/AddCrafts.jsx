@@ -41,8 +41,8 @@ const UpdateProfile = () => {
     }
 
     return (
-        <div className="bg-[rgb(120, 120, 120)] py-12 ">
-            <h2 className="text-center text-3xl font-semibold">Add Your Painting</h2>
+        <div className="bg-green-50 py-12 ">
+            <h2 className="text-center text-4xl font-semibold">Add Your Painting</h2>
             <form onSubmit={handleAddPainting}>
                 <ToastContainer/>
                 <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-10 mx-20 mt-10">
@@ -50,18 +50,18 @@ const UpdateProfile = () => {
                         <div className="label">
                             <span className="label-text text-xl font-semibold">Image URL</span>
                         </div>
-                        <input type="text" placeholder="Type here" name="url" className="input input-bordered w-full " />
+                        <input type="text" placeholder="Image URL" name="url" className="input input-bordered w-full pl-5" />
                     </label>
                     <label className="form-control w-full ">
                         <div className="label">
                             <span className="label-text text-xl font-semibold">Painting Name</span>
                         </div>
-                        <input type="text" placeholder="Type here" name="paintingName" className="input input-bordered w-full " />
+                        <input type="text" placeholder="Painting Name" name="paintingName" className="input input-bordered w-full " />
                     </label>
                     <div className="flex justify-start items-end p-0">
                         <div className="dropdown dropdown-right">
                             <div tabIndex={0} role="button" className="btn text-lg">Sub Category <SlArrowDown></SlArrowDown></div>
-                            <ul tabIndex={0} className="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52">
+                            <ul tabIndex={0} className="dropdown-content z-[1] menu p-2 shadow bg-white rounded-box w-52">
                                 <li onClick={() => { setSubCategory("Landscape Painting") }}><a >Landscape Painting</a></li>
                                 <li onClick={() => { setSubCategory("Portrait Drawing") }}><a>Portrait Drawing</a></li>
                                 <li onClick={() => { setSubCategory("Watercolour Painting") }}><a>Watercolour Painting</a></li>
@@ -74,19 +74,19 @@ const UpdateProfile = () => {
                         <div className="label">
                             <span className="label-text text-xl font-semibold">Short Description</span>
                         </div>
-                        <input type="text" placeholder="Type here" name="shortDescription" className="input input-bordered w-full " />
+                        <input type="text" placeholder="Short Description" name="shortDescription" className="input input-bordered w-full " />
                     </label>
                     <label className="form-control w-full ">
                         <div className="label">
                             <span className="label-text text-xl font-semibold">Price</span>
                         </div>
-                        <input type="text" placeholder="Type here" name="price" className="input input-bordered w-full " />
+                        <input type="text" placeholder="Price" name="price" className="input input-bordered w-full " />
                     </label>
                     <label className="form-control w-full ">
                         <div className="label">
                             <span className="label-text text-xl font-semibold">Rating</span>
                         </div>
-                        <input type="text" placeholder="Type here" name="rating" className="input input-bordered w-full " />
+                        <input type="text" placeholder="Rating" name="rating" className="input input-bordered w-full " />
                     </label>
                     <div className="flex justify-start items-end p-0">
                         <div className="dropdown dropdown-right">
@@ -102,7 +102,7 @@ const UpdateProfile = () => {
                         <div className="label">
                             <span className="label-text text-xl font-semibold">Processing Time</span>
                         </div>
-                        <input type="text" placeholder="Type here" name="processingTime" className="input input-bordered w-full " />
+                        <input type="text" placeholder="Processing Time" name="processingTime" className="input input-bordered w-full " />
                     </label>
                     <div className="flex justify-start items-end p-0">
                         <div className="dropdown dropdown-right">
@@ -116,20 +116,21 @@ const UpdateProfile = () => {
                     </div>
                     <label className="form-control w-full ">
                         <div className="label">
-                            <span className="label-text text-xl font-semibold">Your email</span>
+                            <span className="label-text text-xl font-semibold">Your Name</span>
                         </div>
-                        <input type="text" placeholder="Type here" name="userEmail" value={user.email} className="input input-bordered w-full " />
+                        <input type="text" placeholder="Your Name" name="userName" className="input input-bordered w-full " />
                     </label>
                     <label className="form-control w-full ">
                         <div className="label">
-                            <span className="label-text text-xl font-semibold">Your Name</span>
+                            <span className="label-text text-xl font-semibold">Your Email</span>
                         </div>
-                        <input type="text" placeholder="Type here" name="userName" className="input input-bordered w-full " />
+                        <input type="text" placeholder="Your Email" name="userEmail" value={user.email} className="input input-bordered w-full " />
                     </label>
+                    
 
                 </div>
                 <div className="text-xl text-center">
-                    <input type="submit" value="Add Painting" className="bg-gray-100 p-3 rounded mt-10" />
+                    <input type="submit" value="Add Painting" className="bg-sky-100 px-6 py-4 font-semibold rounded-xl shadow-md mt-10" />
                 </div>
             </form>
 

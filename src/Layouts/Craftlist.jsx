@@ -5,6 +5,7 @@ import Card from "../Cards/Card";
 
 const Craftlist = () => {
     const paintings =useLoaderData();
+    console.log(paintings);
     const {user} = useContext(AuthContext);
     const filteredItems = paintings.filter(item => item.user_email===user.email);
     return (
@@ -14,7 +15,6 @@ const Craftlist = () => {
                     filteredItems.map(card=><Card key={card._id} card={card}></Card>)
                 }
             </div>
-            
         </div>
     );
 };
