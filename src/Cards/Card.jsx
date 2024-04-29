@@ -15,9 +15,9 @@ const Card = ({ card }) => {
 
     return (
         <div>
-            <div className="card card-compact bg-gray-700 text-white border-white border-2 shadow-xl" data-aos="fade-up">
-                <figure><img src={image} alt="Shoes" className="md:h-[300px] " data-aos="zoom-in-up"/></figure>
-                <div className="card-body">
+            <div className="card card-compact bg-white text-black border-white border-2 shadow-xl" data-aos="fade-up">
+                <figure><img src={image} alt="Shoes" className="md:h-[300px] w-full" data-aos="zoom-in-up"/></figure>
+                <div className="card-body p-4">
                     <h2 className="card-title text-xl font-bold">{name}</h2>
                     <div className="">
                         <p className="text-lg"><span className="text-lg font-medium">Short Description: </span>{short_description}</p>
@@ -30,7 +30,7 @@ const Card = ({ card }) => {
                     <div className="flex justify-between" data-aos="fade-up">
                         <Link to={`/cards/${card._id}`}>
                             <div className="card-actions justify-end ">
-                                <button className="btn px-8 w-full bg-[rgba(250,250,250,0.5)] md:text-lg font-medium">View Details</button>
+                                <button className="btn px-8 w-full bg-red-100 md:text-lg font-medium">View Details</button>
                             </div>
                         </Link>
                     </div>
