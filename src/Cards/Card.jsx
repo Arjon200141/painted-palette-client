@@ -7,8 +7,8 @@ import { Link } from 'react-router-dom';
 const Card = ({ card }) => {
 
     useEffect(() => {
-        Aos.init({duration : 200})
-    },[])
+        Aos.init({ duration: 200 })
+    }, [])
 
     const { _id, name, image, short_description, customization, stock_status, price } = card;
     console.log(card);
@@ -16,15 +16,16 @@ const Card = ({ card }) => {
     return (
         <div>
             <div className="card card-compact bg-white text-black border-white border-2 shadow-xl" data-aos="fade-up">
-                <figure><img src={image} alt="Shoes" className="md:h-[300px] w-full" data-aos="zoom-in-up"/></figure>
-                <div className="card-body p-4">
+                <figure><img src={image} alt="Shoes" className="md:h-[300px] w-full" data-aos="zoom-in-up" /></figure>
+                <div className="card-body px-6 py-4">
                     <h2 className="card-title text-xl font-bold">{name}</h2>
-                    <div className="">
-                        <p className="text-lg"><span className="text-lg font-medium">Short Description: </span>{short_description}</p>
+                    <p className="text-lg"><span className="text-lg font-medium">Short Description: </span>{short_description}</p>
+                    <div className="md:flex justify-between">
+                        <p className="text-lg"><span className="text-lg font-medium">Price: </span>{price}</p>
                         <p className="text-lg"><span className="text-lg font-medium">Customization: </span>{customization}</p>
                     </div>
                     <div className="space-y-2 mb-4">
-                        <p className="text-lg"><span className="text-lg font-medium">Price: </span>{price}</p>
+
                         <p className="text-lg"><span className="text-lg font-medium">Stock Status: </span>{stock_status}</p>
                     </div>
                     <div className="flex justify-between" data-aos="fade-up">
