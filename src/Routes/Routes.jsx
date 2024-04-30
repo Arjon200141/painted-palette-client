@@ -10,6 +10,7 @@ import AddCrafts from "../Layouts/AddCrafts";
 import Craftlist from "../Layouts/Craftlist";
 import CardDetails from "../Cards/CardDetails";
 import Categories from "../Layouts/Categories";
+import UpdateProfile from "../Layouts/AddCrafts";
 
 
 const router = createBrowserRouter([
@@ -54,6 +55,11 @@ const router = createBrowserRouter([
                 path: "/subcategory/:sub",
                 element: <PrivateRoute><Categories></Categories></PrivateRoute>,
                 loader: ({ params }) =>fetch(`https://painted-palette-server.vercel.app/subcategory/${params.sub}`),
+            },
+            {
+                path: "/updateinfo/:id",
+                element: <PrivateRoute><AddCrafts></AddCrafts></PrivateRoute>,
+                loader: ({ params }) =>fetch(`https://painted-palette-server.vercel.app/subcategory/${params.id}`),
             },
 
         ]

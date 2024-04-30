@@ -15,6 +15,9 @@ const Card = ({ card, handleDelete, categorySec }) => {
         nav(`/subcategory/${sc.split(' ').join('_')}`);
 
     }
+    const handleUpdate= id =>{
+        nav(`/updateinfo/${id}`);
+    }
 
     const { _id, item_name, image, short_description, customization, stock_status, price, subcategory_name } = card;
     if (categorySec) return (
@@ -53,10 +56,10 @@ const Card = ({ card, handleDelete, categorySec }) => {
                                 ?
                                 <>
                                     <div className="card-actions justify-end ">
-                                        <button className="btn px-8 w-full bg-blue-400 md:text-lg font-semibold">Update</button>
+                                        <button onClick={()=>handleUpdate(_id)} className="btn px-8 w-full bg-blue-400 md:text-lg font-semibold">Update</button>
                                     </div>
                                     <div className="card-actions justify-end ">
-                                        <button onClick={() => { handleDelete(_id) }} className="btn px-8 w-full bg-red-100 md:text-lg font-semibold">Delete</button>
+                                        <button  onClick={() => { handleDelete(_id) }} className="btn px-8 w-full bg-red-100 md:text-lg font-semibold">Delete</button>
                                     </div>
                                 </>
                                 :
