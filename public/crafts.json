@@ -1,7 +1,7 @@
 [
     {
         "id": "1",
-        "image": "https://example.com/mountain_view_canvas.jpg",
+        "image": "https://i.ibb.co/6RBmPzB/painting-mountain-lake-with-mountain-background-327072-11634.jpg",
         "item_name": "Mountain View Canvas",
         "subcategory_Name": "Landscape Painting",
         "short_description": "A serene canvas depicting a majestic mountain landscape.",
@@ -13,7 +13,7 @@
       },
       {
         "id": "2",
-        "image": "https://example.com/forest_landscape_painting.jpg",
+        "image": "https://i.ibb.co/QKxXr89/aesthetic-desktop-wallpaper-with-tranquil-waterfall-lush-rainforestnature-escapeserene-943612-12850.jpg",
         "item_name": "Forest Landscape Painting",
         "subcategory_Name": "Landscape Painting",
         "short_description": "A vibrant painting capturing the beauty of a forest scene.",
@@ -25,7 +25,7 @@
       },
       {
         "id": "3",
-        "image": "https://example.com/pencil_sketch_portrait.jpg",
+        "image": "https://i.ibb.co/d4BJb6M/drawings-about-legal-profession-23-2151190719.jpg",
         "item_name": "Pencil Sketch Portrait",
         "subcategory_Name": "Portrait Drawing",
         "short_description": "An elegant pencil sketch capturing a person's likeness.",
@@ -37,7 +37,7 @@
       },
       {
         "id": "4",
-        "image": "https://example.com/floral_watercolor_art.jpg",
+        "image": "https://i.ibb.co/72bGnD8/abstract-watercolor-painted-flower-978155-477.jpg",
         "item_name": "Floral Watercolor Art",
         "subcategory_Name": "Watercolour Painting",
         "short_description": "Delicate watercolor painting featuring vibrant floral motifs.",
@@ -49,7 +49,7 @@
       },
       {
         "id": "5",
-        "image": "https://example.com/realistic_oil_portrait.jpg",
+        "image": "https://i.ibb.co/qyQYbrx/hd-digital-art-stock-image-wallpaper-783884-69395.jpg",
         "item_name": "Realistic Oil Portrait",
         "subcategory_Name": "Oil Painting",
         "short_description": "A lifelike oil painting capturing detailed features of a person.",

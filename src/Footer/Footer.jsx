@@ -52,10 +52,10 @@ const Footer = () => {
 
                     <div className="grid grid-flow-col gap-2 md:gap-12">
                         <a><img src="https://i.ibb.co/GTL1Rfz/twitter-1.png" alt="" className="h-8 w-8" /></a>
-                        <a><img src="https://i.ibb.co/0CtCj1J/instagram-2.png" alt="" className="h-8 w-8" /></a>
-                        <a><img src="https://i.ibb.co/FgRrvwR/communication.png" alt="" className="h-8 w-8" /></a>
-                        <a><img src="https://i.ibb.co/3TP1by1/linkedin.png" alt="" className="h-8 w-8" /></a>
-                        <a><img src="https://i.ibb.co/WyhFTkk/github.png" alt="" className="h-8 w-8" /></a>
+                        <a><img src="https://i.ibb.co/dbvX6Fr/instagram-icon-1057-2227.jpg" alt="" className="h-8 w-8" /></a>
+                        <a><img src="https://i.ibb.co/181L2mT/facebook-icon-488108-2.jpg" alt="" className="h-8 w-8" /></a>
+                        <a><img src="https://i.ibb.co/hKQbH1J/3d-icon-social-media-app-23-2150049587.jpg" alt="" className="h-8 w-8" /></a>
+                        <a><img src="https://i.ibb.co/fHBG2jM/github.png" alt="" className="h-8 w-8" /></a>
                     </div>
                 </nav>
             </footer>

@@ -113,9 +113,9 @@ const LogIn = () => {
                     </div>
                   
                     <div className="mb-6 flex justify-center items-center gap-12">
-                            <button data-aos="fade-right" onClick={handleGoogleLogin} className="btn h-16 px-6 py-1 md:ml-8 text-lg font-medium"><img src="https://i.ibb.co/TbnztzB/google-symbol.png" alt="" className="h-10 w-10"/> </button>
+                            <button data-aos="fade-right" onClick={handleGoogleLogin} className="btn h-16 px-6 py-1 md:ml-8 text-lg font-medium"><img src="https://i.ibb.co/PMh8F7x/google-symbol.png" alt="" className="h-10 w-10"/> </button>
                             <p className="text-2xl font-medium">Or</p>
-                            <button data-aos="fade-left" onClick={handleGithubLogin} className="btn h-16  px-6 py-1 md:ml-0 text-lg bg-black font-medium"><img src="https://i.ibb.co/WyhFTkk/github.png" alt="" className="h-10 w-10"/></button>
+                            <button data-aos="fade-left" onClick={handleGithubLogin} className="btn h-16  px-6 py-1 md:ml-0 text-lg bg-black font-medium"><img src="https://i.ibb.co/fHBG2jM/github.png" alt="" className="h-10 w-10"/></button>
                         </div>
                     <p className="text-xl font-semibold text-center mb-6">New Here ? <Link to="/register" className="text-red-500">Register Now</Link></p>
                 </div>
