@@ -2,6 +2,7 @@ import { useContext, useState } from "react";
 import { SlArrowDown } from "react-icons/sl";
 import { AuthContext } from "../providers/AuthProviders";
 import { ToastContainer, toast } from "react-toastify";
+import { Helmet } from "react-helmet-async";
 
 const UpdateProfile = () => {
     const { user } = useContext(AuthContext);
@@ -42,6 +43,11 @@ const UpdateProfile = () => {
 
     return (
         <div className="bg-green-50 py-12 ">
+            <Helmet>
+                <title>
+                    Add Craft Items
+                </title>
+            </Helmet>
             <h2 className="text-center text-4xl font-semibold">Add Your Painting</h2>
             <form onSubmit={handleAddPainting}>
                 <ToastContainer/>

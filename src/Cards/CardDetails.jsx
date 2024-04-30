@@ -10,7 +10,7 @@ const CardDetails = () => {
     return (
         <div>
             <Helmet>
-                <title>Details of Card</title>
+                <title>View Details</title>
             </Helmet>
             <div className="hero bg-base-100">
                 <div className="hero-content flex-col md:flex-row md:gap-8 md:mx-12">

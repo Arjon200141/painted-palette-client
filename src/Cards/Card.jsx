@@ -2,13 +2,14 @@ import PropTypes from 'prop-types';
 import Aos from "aos"
 import { useEffect } from "react";
 import "aos/dist/aos.css";
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 
-const Card = ({ card }) => {
+const Card = ({ card ,handleDelete}) => {
 
     useEffect(() => {
         Aos.init({ duration: 200 })
     }, [])
+    const location = useLocation();
 
     const { _id, name, image, short_description, customization, stock_status, price } = card;
     return (
@@ -22,15 +23,29 @@ const Card = ({ card }) => {
                         <p className="text-lg"><span className="text-lg font-medium">Price: </span>{price}</p>
                         <p className="text-lg"><span className="text-lg font-medium">Customization: </span>{customization}</p>
                     </div>
-                    
-                        <p className="text-lg"><span className="text-lg font-medium">Stock Status: </span>{stock_status}</p>
-                    
+
+                    <p className="text-lg"><span className="text-lg font-medium">Stock Status: </span>{stock_status}</p>
+
                     <div className="flex justify-between" data-aos="fade-up">
-                        <Link to={`/cards/${card._id}`}>
-                            <div className="card-actions justify-end ">
-                                <button className="btn px-8 w-full bg-red-100 md:text-lg font-semibold">View Details</button>
-                            </div>
-                        </Link>
+                        {
+                            location.pathname === "/artscraftlist"
+                                ?
+                                <>
+                                    <div className="card-actions justify-end ">
+                                        <button className="btn px-8 w-full bg-blue-400 md:text-lg font-semibold">Update</button>
+                                    </div>
+                                    <div className="card-actions justify-end ">
+                                        <button onClick={()=>{handleDelete(_id)}} className="btn px-8 w-full bg-red-100 md:text-lg font-semibold">Delete</button>
+                                    </div>
+                                </>
+                                :
+                                <> <Link to={`/cards/${card._id}`}>
+                                    <div className="card-actions justify-end ">
+                                        <button className="btn px-8 w-full bg-red-100 md:text-lg font-semibold">View Details</button>
+                                    </div>
+                                </Link>
+                                </>
+                        }
                     </div>
                 </div>
             </div>
