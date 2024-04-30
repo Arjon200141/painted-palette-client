@@ -3,13 +3,13 @@ import Root from "../Root/Root";
 import Home from "../Layouts/Home";
 import Register from "../Layouts/Register";
 import LogIn from "../Layouts/LogIn";
-// import CardDetails from "../Cards/CardDetails";
 import ErrorPage from "../ErrorPage/ErrorPage";
 import PrivateRoute from "./PrivateRoute";
 import AllCrafts from "../Layouts/AllCrafts";
 import AddCrafts from "../Layouts/AddCrafts";
 import Craftlist from "../Layouts/Craftlist";
 import CardDetails from "../Cards/CardDetails";
+import Categories from "../Layouts/Categories";
 
 
 const router = createBrowserRouter([
@@ -21,12 +21,12 @@ const router = createBrowserRouter([
             {
                 path: "/",
                 element: <Home></Home>,
-                loader: ()=>fetch('http://localhost:5000/paintings'),
+                loader: ()=>fetch('https://painted-palette-server.vercel.app/paintings'),
             },
             {
                 path: "/allcraft",
                 element: <AllCrafts></AllCrafts>,
-                loader: ()=>fetch('http://localhost:5000/paintings'),
+                loader: ()=>fetch('https://painted-palette-server.vercel.app/paintings'),
             },
             {
                 path: "/register",
@@ -43,12 +43,17 @@ const router = createBrowserRouter([
             {
                 path: "/artscraftlist",
                 element: <PrivateRoute><Craftlist></Craftlist></PrivateRoute>,
-                loader: ()=>fetch('http://localhost:5000/paintings'),
+                loader: ()=>fetch('https://painted-palette-server.vercel.app/paintings'),
             },
             {
                 path: "/cards/:cardId",
                 element: <PrivateRoute><CardDetails></CardDetails></PrivateRoute>,
-                loader: ({ params }) =>fetch(`http://localhost:5000/paintings/${params.cardId}`),
+                loader: ({ params }) =>fetch(`https://painted-palette-server.vercel.app/paintings/${params.cardId}`),
+            },
+            {
+                path: "/subcategory/:sub",
+                element: <PrivateRoute><Categories></Categories></PrivateRoute>,
+                loader: ({ params }) =>fetch(`https://painted-palette-server.vercel.app/subcategory/${params.sub}`),
             },
 
         ]

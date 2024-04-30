@@ -3,6 +3,8 @@ import BannerSlider from "../Header/BannerSlider";
 import Reviews from "./Reviews";
 import CraftItems from "./CraftItems";
 import FAQs from "./FAQs";
+import SC from "./SC";
+
 
 const Home = () => {
     return (
@@ -12,6 +14,7 @@ const Home = () => {
             </Helmet>
             <BannerSlider></BannerSlider>
             <CraftItems></CraftItems>
+            <SC></SC>
             <FAQs></FAQs>
             <Reviews></Reviews>
         </div>

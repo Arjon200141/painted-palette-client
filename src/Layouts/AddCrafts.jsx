@@ -23,10 +23,11 @@ const UpdateProfile = () => {
         const processing_time = form.processingTime.value;
         const user_email = form.userEmail.value;
         const user_Name = form.userName.value;
+        const user_id=user.uid;
 
-        const newPainting = { name, image, short_description, price, rating, processing_time, user_email, user_Name, subcategory_name, customization, stock_status }
+        const newPainting = { name, image, short_description, price, rating, processing_time, user_email, user_Name, subcategory_name, customization, stock_status,user_id }
         console.log(newPainting);
-        fetch("http://localhost:5000/paintings", {
+        fetch("https://painted-palette-server.vercel.app/paintings", {
             method: 'POST',
             headers: {
                 'Content-type': 'application/json'
@@ -130,7 +131,7 @@ const UpdateProfile = () => {
                         <div className="label">
                             <span className="label-text text-xl font-semibold">Your Email</span>
                         </div>
-                        <input type="text" placeholder="Your Email" name="userEmail" value={user.email} className="input input-bordered w-full " />
+                            <input type="text" placeholder="Your Email" name="userEmail" className="input input-bordered w-full " />
                     </label>
                     
 
