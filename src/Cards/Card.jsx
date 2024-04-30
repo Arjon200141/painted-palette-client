@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 import Aos from "aos"
 import { useEffect } from "react";
 import "aos/dist/aos.css";
-import { Link, useLocation, useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 const Card = ({ card, handleDelete, categorySec }) => {
 
