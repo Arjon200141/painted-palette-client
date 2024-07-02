@@ -9,7 +9,6 @@ const SC = () => {
     const card4=paintings.find(item => item.subcategory_name==="Oil Painting");
     const card5=paintings.find(item => item.subcategory_name==="Cartoon Drawing");
     
-    
     return (
         <div>
             <h2 className='text-4xl font-semibold text-center'>Painting Categories</h2>

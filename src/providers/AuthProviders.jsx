@@ -4,8 +4,6 @@ import { createUserWithEmailAndPassword, onAuthStateChanged, signInWithEmailAndP
 import auth from "../firebase.config";
 
 
-
-
 export const AuthContext = createContext(null);
 
 const AuthProviders = ({ children }) => {

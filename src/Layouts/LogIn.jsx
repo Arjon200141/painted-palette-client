@@ -54,7 +54,6 @@ const LogIn = () => {
                 toast.error(error.message);
             })
     }
-
     const handleLogIn = e => {
         e.preventDefault();
         const form = new FormData(e.currentTarget)

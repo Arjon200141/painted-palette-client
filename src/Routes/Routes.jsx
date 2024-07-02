@@ -10,7 +10,6 @@ import AddCrafts from "../Layouts/AddCrafts";
 import Craftlist from "../Layouts/Craftlist";
 import CardDetails from "../Cards/CardDetails";
 import Categories from "../Layouts/Categories";
-import UpdateProfile from "../Layouts/AddCrafts";
 
 
 const router = createBrowserRouter([
