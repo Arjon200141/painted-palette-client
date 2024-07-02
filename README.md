@@ -5,13 +5,6 @@ Painted Palette is designed to provide artists and crafters with a comprehensive
 
 Visit the live site: (https://painted-palette-a10.web.app/)
 
-## Features
-- **All Arts and Craft Items**: Explore a wide range of art and craft items including paints, brushes, canvases, and more.
-- **Add Craft Items**: Easily add your favorite craft items to your cart for a seamless shopping experience.
-- **My Art and Craft List**: Maintain your personalized list of art and craft items for future reference and purchases.
-- **Log In / Register**: Create an account to access exclusive features and save your preferences.
-- **View Details Page**: Dive deeper into product details with our comprehensive item description pages.
-
 ## Special Features:
 - **Wide Range of Products**: Access to an extensive collection of art supplies.
 - **Personalized Lists**: Save and manage lists of favorite items.
